@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
 
         val list: ArrayList<String> = arrayListOf()
 
-        list.add(context.filesDir.absolutePath.toString() + "/anim/ap.zip")
+//        list.add(context.filesDir.absolutePath.toString() + "/anim/ap.zip")
         list.add(context.filesDir.absolutePath.toString() + "/anim/lt.zip")
-        list.add(context.filesDir.absolutePath.toString() + "/anim/as.zip")
+//        list.add(context.filesDir.absolutePath.toString() + "/anim/as.zip")
         list.add(context.filesDir.absolutePath.toString() + "/anim/xs.zip")
         return list
     }
