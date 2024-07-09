@@ -13,7 +13,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        copyWakeupAnimResources()
+//        copyWakeupAnimResources()
+        Log.i("limingwei", "test = " + resources.getDimension(R.dimen.test))
+
         val list:ArrayList<String> = prepareAnimList(this)
         var index:Int = 0;
 
@@ -37,10 +39,10 @@ class MainActivity : AppCompatActivity() {
 
         val list: ArrayList<String> = arrayListOf()
 
-//        list.add(context.filesDir.absolutePath.toString() + "/anim/ap.zip")
-        list.add(context.filesDir.absolutePath.toString() + "/anim/lt.zip")
+        list.add(context.filesDir.absolutePath.toString() + "/anim/ap.zip")
+//        list.add(context.filesDir.absolutePath.toString() + "/anim/lt.zip")
 //        list.add(context.filesDir.absolutePath.toString() + "/anim/as.zip")
-        list.add(context.filesDir.absolutePath.toString() + "/anim/xs.zip")
+//        list.add(context.filesDir.absolutePath.toString() + "/anim/xs.zip")
         return list
     }
 
